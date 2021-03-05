@@ -46,7 +46,7 @@ figure, header, nav, section, article, aside, footer, figcaption {
   --primary:#0f3057;
   --secondary:#00587a;
   --tertiary:#008891;
-  --grey:#e7e7de;
+  --grey:#7a7a7a;
 }
 .clearfix:after {
   content: ".";
@@ -777,13 +777,14 @@ about
   left: 45px;
   font-size: 100px;
   font-weight: 600;
-  color: #fdefe9;
+  color: #00587a22;
+  /* color: var(--primary)22; */
 }
 
 .features-item img {
   z-index: 10;
   position: relative;
-  max-width: 100%;
+  max-width: 100px;
   margin-bottom: 40px;
 }
 
@@ -842,6 +843,7 @@ promotion
   display: inline-block;
   float: left;
   margin-right: 30px;
+  max-width: 120px;
 }
 
 #promotion .right-text h4 {
