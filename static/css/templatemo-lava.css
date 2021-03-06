@@ -573,7 +573,7 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
   .header-area .menu-trigger {
     display: block !important;
