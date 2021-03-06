@@ -18,14 +18,18 @@ https://templatemo.com/tm-540-HostoCare-landing-page
 
 -->
 
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}"">
 
-    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-lava.css') }}"">
 
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css') }}"">
 
 </head>
 
@@ -57,15 +61,15 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
                             <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
-                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
-                            </li>
+                            <!-- <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
+                            </li> -->
                             <li class="submenu">
-                                <a href="javascript:;">Drop Down</a>
+                                <a href="javascript:;">Search for</a>
                                 <ul>
-                                    <li><a href="" class="menu-item">About Us</a></li>
-                                    <li><a href="" class="menu-item">Features</a></li>
-                                    <li><a href="" class="menu-item">FAQ's</a></li>
-                                    <li><a href="" class="menu-item">Blog</a></li>
+                                    <li><a href="" class="menu-item">Hospitals</a></li>
+                                    <li><a href="" class="menu-item">Lab Centers</a></li>
+                                    <li><a href="" class="menu-item">Clinics</a></li>
+                                    <li><a href="" class="menu-item">Medical Store</a></li>
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
@@ -112,7 +116,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                     <div class="features-item">
                         <div class="features-icon">
                             <h2>01</h2>
-                            <img src="assets/images/features-icon-1.png" alt="">
+                            <img src="{{ url_for('static', filename='images/features-icon-1.png') }}" alt="">
                             <h4>Trend Analysis</h4>
                             <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
                             <a href="#testimonials" class="main-button">
@@ -126,7 +130,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                     <div class="features-item">
                         <div class="features-icon">
                             <h2>02</h2>
-                            <img src="assets/images/features-icon-2.png" alt="">
+                            <img src="{{ url_for('static', filename='images/features-icon-2.png') }}" alt="">
                             <h4>Site Optimization</h4>
                             <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
                             <a href="#testimonials" class="main-button">
@@ -140,7 +144,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                     <div class="features-item">
                         <div class="features-icon">
                             <h2>03</h2>
-                            <img src="assets/images/features-icon-3.png" alt="">
+                            <img src="{{ url_for('static', filename='images/features-icon-3.png') }}" alt="">
                             <h4>Email Design</h4>
                             <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
                             <a href="#testimonials" class="main-button">
@@ -162,12 +166,12 @@ https://templatemo.com/tm-540-HostoCare-landing-page
             <div class="row">
                 <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                    <img src="{{ url_for('static', filename='images/left-image.png') }}" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
                     <ul>
                         <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                            <img src="assets/images/about-icon-01.png" alt="">
+                            <img src="{{ url_for('static', filename='images/about-icon-01.png') }}" alt="">
                             <div class="text">
                                 <h4>Vestibulum pulvinar rhoncus</h4>
                                 <p>Please do not redistribute this template ZIP file for a download purpose. You may <a
@@ -176,7 +180,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                             </div>
                         </li>
                         <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                            <img src="assets/images/about-icon-02.png" alt="">
+                            <img src="{{ url_for('static', filename='images/about-icon-02.png') }}" alt="">
                             <div class="text">
                                 <h4>Sed blandit quam in velit</h4>
                                 <p>You can <a rel="nofollow"
@@ -186,7 +190,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                             </div>
                         </li>
                         <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                            <img src="assets/images/about-icon-03.png" alt="">
+                            <img src="{{ url_for('static', filename='images/about-icon-03.png') }}" alt="">
                             <div class="text">
                                 <h4>Aenean faucibus venenatis</h4>
                                 <p>Phasellus in imperdiet felis, eget vestibulum nulla. Aliquam nec dui nec augue
@@ -218,7 +222,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                     <div class="owl-carousel owl-theme">
                         <div class="item service-item">
                             <div class="author">
-                                <i><img src="assets/images/testimonial-author-1.png" alt="Author One"></i>
+                                <i><img src="{{ url_for('static', filename='images/testimonial-author-1.png') }}" alt="Author One"></i>
                             </div>
                             <div class="testimonial-content">
                                 <ul class="stars">
@@ -236,7 +240,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                         </div>
                         <div class="item service-item">
                             <div class="author">
-                                <i><img src="assets/images/testimonial-author-1.png" alt="Second Author"></i>
+                                <i><img src="{{ url_for('static', filename='images/testimonial-author-1.png') }}" alt="Second Author"></i>
                             </div>
                             <div class="testimonial-content">
                                 <ul class="stars">
@@ -254,7 +258,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                         </div>
                         <div class="item service-item">
                             <div class="author">
-                                <i><img src="assets/images/testimonial-author-1.png" alt="Author Third"></i>
+                                <i><img src="{{ url_for('static', filename='images/testimonial-author-1.png') }}" alt="Author Third"></i>
                             </div>
                             <div class="testimonial-content">
                                 <ul class="stars">
@@ -270,7 +274,7 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                         </div>
                         <div class="item service-item">
                             <div class="author">
-                                <i><img src="assets/images/testimonial-author-1.png" alt="Fourth Author"></i>
+                                <i><img src="{{ url_for('static', filename='images/testimonial-author-1.png') }}" alt="Fourth Author"></i>
                             </div>
                             <div class="testimonial-content">
                                 <ul class="stars">
@@ -291,6 +295,92 @@ https://templatemo.com/tm-540-HostoCare-landing-page
         </div>
     </section>
     <!-- ***** Testimonials Ends ***** -->
+
+
+
+
+
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWVpbmhvb25oYXJzaCIsImEiOiJja2x4YnRvdWUwdndzMnZudmtlYTUzY29zIn0.D52TDvpIZNtEZek0tvqlyA';
+    
+    var geojson = {
+            'type': 'FeatureCollection',
+            'features': [
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'message': 'Foo',
+                        'src':'https://image.flaticon.com/icons/png/512/169/169869.png'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [77.482181, 23.241662]
+                    }
+                },
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'message': 'Bar',
+                        'src':'https://image.flaticon.com/icons/png/512/169/169837.png'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [77.482181, 23.221662]
+                    }
+                },
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'message': 'Baz',
+                        'src':'https://cdn.icon-icons.com/icons2/1465/PNG/512/588hospital_100778.png'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [77.462181, 23.221262]
+                    }
+                }
+            ]
+        };
+    
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [ 77.482181,23.221662],
+        zoom:13
+    });
+    // Set options
+        // var marker = new mapboxgl.Marker({
+        //     color: "#FFFFFF",
+        //     draggable: true
+        // }).setLngLat([ 77.482181,23.221662])
+        //     .addTo(map);
+
+
+
+               geojson.features.forEach(function (marker) {
+                    // create a DOM element for the marker
+                    var el = document.createElement('img');
+                    el.className = 'marker';
+                    el.src = marker.properties.src;
+                    el.style.width ='50px';
+                    el.style.height ='50px';
+
+                    el.addEventListener('click', function () {
+                        window.alert(marker.properties.message);
+                    });
+
+                    // add marker to map
+                    new mapboxgl.Marker(el)
+                        .setLngLat(marker.geometry.coordinates)
+                        .addTo(map);
+                });
+</script>
+
+
+
+
 
 
     <!-- ***** Footer Start ***** -->
@@ -362,21 +452,21 @@ https://templatemo.com/tm-540-HostoCare-landing-page
     </footer>
 
     <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery-2.1.0.min.js') }}"></script>
 
     <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 
     <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
+    <script src="{{ url_for('static', filename='js/owl-carousel.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scrollreveal.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/imgfix.min.js') }}"></script>
 
     <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 
 </body>
 </html>
