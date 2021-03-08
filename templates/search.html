@@ -8,7 +8,7 @@
    
    <div class="row">
 
-<div class="col-12 col-md-6 col-lg-4">
+<div class="col-12 col-md-6 col-lg-3">
    <div class="card">
       <img class="card-img-top" src="https://hitinfrastructure.com/images/site/article_headers/_normal/hospital.jpg" alt="Unsplash">
       
@@ -17,26 +17,153 @@
          <h3 class="mb-0">Hospitals</h3>
          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
-         <a href="#" class="btn btn-primary">Search Hospitals</a>
+         <a href="/hospitals" class="btn btn-primary">Search Hospitals</a>
       </div>
    </div>
 </div>
 
-<div class="col-12 col-md-6 col-lg-4">
+<div class="col-12 col-md-6 col-lg-3">
    <div class="card">
       <img class="card-img-top" src="https://hitinfrastructure.com/images/site/article_headers/_normal/hospital.jpg" alt="Unsplash">
       
       
       <div class="card-body">
-         <h3 class="mb-0">Hospitals</h3>
+         <h3 class="mb-0">Clinics</h3>
          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
-         <a href="#" class="btn btn-primary">Search Hospitals</a>
+         <a href="/clinics" class="btn btn-primary">Search Clinics</a>
+      </div>
+   </div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-3">
+   <div class="card">
+      <img class="card-img-top" src="https://hitinfrastructure.com/images/site/article_headers/_normal/hospital.jpg" alt="Unsplash">
+      
+      
+      <div class="card-body">
+         <h3 class="mb-0">Lab Centre</h3>
+         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+         <a href="/labcentre" class="btn btn-primary">Search Lab Centre</a>
+      </div>
+   </div>
+</div>
+
+<div class="col-12 col-md-6 col-lg-3">
+   <div class="card">
+      <img class="card-img-top" src="https://hitinfrastructure.com/images/site/article_headers/_normal/hospital.jpg" alt="Unsplash">
+      
+      
+      <div class="card-body">
+         <h3 class="mb-0">Pharmacy</h3>
+         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+         <a href="/pharmacy" class="btn btn-primary">Search Pharmacy</a>
       </div>
    </div>
 </div>
    </div>
+   <meta id="my-data" data-name="{{geojson}}">
+<div id='map' style='width: 100%; aspect-ratio: 5/3;'></div>
+<script>
+   
+      var x = document.getElementById("demo");
+      var latitude = 20.5937;
+      var longitude = 78.9629;
 
+      if (navigator.geolocation) {
+         var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+         };
+
+         function success(pos) {
+            var crd = pos.coords;
+            console.log('Your current position is:');
+            console.log(`Latitude : ${crd.latitude}`);
+            console.log(`Longitude: ${crd.longitude}`);
+            console.log(`More or less ${crd.accuracy} meters.`);
+            latitude = crd.latitude;
+            longitude = crd.longitude;
+            blitMap()
+
+         }
+
+         function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+         }
+
+         navigator.geolocation.getCurrentPosition(success, error, options);
+      } else {
+         alert("Geolocation is not supported by this browser.")
+      }
+
+
+
+
+
+
+function blitMap() {
+  
+
+   mapboxgl.accessToken = 'pk.eyJ1IjoibWVpbmhvb25oYXJzaCIsImEiOiJja2x4YnRvdWUwdndzMnZudmtlYTUzY29zIn0.D52TDvpIZNtEZek0tvqlyA';
+
+   var geojson = JSON.parse(document.getElementById("my-data").getAttribute('data-name'));
+
+   var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [longitude, latitude],
+      zoom: 13
+   });
+   // Set options
+   // var marker = new mapboxgl.Marker({
+   //     color: "#FFFFFF",
+   //     draggable: true
+   // }).setLngLat([ 77.482181,23.221662])
+   //     .addTo(map);
+
+
+
+   geojson.forEach(function (marker) {
+      // create a DOM element for the marker
+      var el = document.createElement('img');
+      el.className = 'marker';
+      el.src = '/static/images/marker/'+marker.properties.type+'.png';
+      el.style.width = '40px';
+      el.style.height = '40px';
+
+      el.addEventListener('click', function () {
+         window.location.replace("/view/"+marker.properties.type+"/"+marker.properties.id);
+      });
+      
+      // create the popup
+      var popup = new mapboxgl.Popup(
+         { offset: [28, 0] }
+      ).setText(
+         marker.properties.name
+      );
+      // add marker to map
+      let marke = new mapboxgl.Marker(el)
+         .setLngLat(marker.geometry.coordinates)
+         // .addTo(map);
+      
+
+      // get the marker element
+      const element = marke.getElement();
+      element.id = 'marker'
+      // hover event listener
+      element.addEventListener('mouseenter', () => popup.addTo(map));
+      element.addEventListener('mouseleave', () => popup.remove());
+
+      // add popup to marker
+      marke.setPopup(popup);
+      // add marker to map
+      marke.addTo(map);
+   });}
+</script>
 
 
 <!-- 
