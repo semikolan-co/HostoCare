@@ -64,12 +64,12 @@ https://templatemo.com/tm-540-HostoCare-landing-page
                             <!-- <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
                             </li> -->
                             <li class="submenu">
-                                <a href="javascript:;">Search for</a>
+                                <a href="/search">Search for</a>
                                 <ul>
-                                    <li><a href="" class="menu-item">Hospitals</a></li>
-                                    <li><a href="" class="menu-item">Lab Centers</a></li>
-                                    <li><a href="" class="menu-item">Clinics</a></li>
-                                    <li><a href="" class="menu-item">Medical Store</a></li>
+                                    <li><a href="/hospitals" class="menu-item">Hospitals</a></li>
+                                    <li><a href="/labcentre" class="menu-item">Lab Centers</a></li>
+                                    <li><a href="/clinics" class="menu-item">Clinics</a></li>
+                                    <li><a href="/pharmacy" class="menu-item">Medical Store</a></li>
                                 </ul>
                             </li>
                             <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
@@ -297,86 +297,6 @@ https://templatemo.com/tm-540-HostoCare-landing-page
     <!-- ***** Testimonials Ends ***** -->
 
 
-
-
-
-
-<div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoibWVpbmhvb25oYXJzaCIsImEiOiJja2x4YnRvdWUwdndzMnZudmtlYTUzY29zIn0.D52TDvpIZNtEZek0tvqlyA';
-    
-    var geojson = {
-            'type': 'FeatureCollection',
-            'features': [
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'message': 'Foo',
-                        'src':'https://image.flaticon.com/icons/png/512/169/169869.png'
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [77.482181, 23.241662]
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'message': 'Bar',
-                        'src':'https://image.flaticon.com/icons/png/512/169/169837.png'
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [77.482181, 23.221662]
-                    }
-                },
-                {
-                    'type': 'Feature',
-                    'properties': {
-                        'message': 'Baz',
-                        'src':'https://cdn.icon-icons.com/icons2/1465/PNG/512/588hospital_100778.png'
-                    },
-                    'geometry': {
-                        'type': 'Point',
-                        'coordinates': [77.462181, 23.221262]
-                    }
-                }
-            ]
-        };
-    
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [ 77.482181,23.221662],
-        zoom:13
-    });
-    // Set options
-        // var marker = new mapboxgl.Marker({
-        //     color: "#FFFFFF",
-        //     draggable: true
-        // }).setLngLat([ 77.482181,23.221662])
-        //     .addTo(map);
-
-
-
-               geojson.features.forEach(function (marker) {
-                    // create a DOM element for the marker
-                    var el = document.createElement('img');
-                    el.className = 'marker';
-                    el.src = marker.properties.src;
-                    el.style.width ='50px';
-                    el.style.height ='50px';
-
-                    el.addEventListener('click', function () {
-                        window.alert(marker.properties.message);
-                    });
-
-                    // add marker to map
-                    new mapboxgl.Marker(el)
-                        .setLngLat(marker.geometry.coordinates)
-                        .addTo(map);
-                });
-</script>
 
 
 

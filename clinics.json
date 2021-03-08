@@ -1,0 +1,67 @@
+{
+   "data": [
+      {
+         "id": 1,
+         "name": "XYZ Alpha Hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.3853,
+         "long": 77.4256,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contect": 123456343,
+               "speciality": [
+                  "app_development",
+                  "c",
+                  "c++"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contect": 123456343,
+               "speciality": [
+                  "graphic_designing",
+                  "illustrations"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare":[
+            {
+               "name": "Dr. Ankur Gupta",
+               "contect": 123456343,
+               "speciality": [
+                  "app_development",
+                  "c",
+                  "c++"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contect": 123456343,
+               "speciality": [
+                  "graphic_designing",
+                  "illustrations"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      }
+   ]
+}
