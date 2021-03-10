@@ -2,6 +2,9 @@
    "data": [
       {
          "id": 1,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
          "name": "XYZ Alpha Hospital",
          "address": "123 aabra daaba nagar, area, locality",
          "city": "Bhopal",

@@ -1,18 +1,21 @@
 {
    "data":[
       {
-        "id": 1,
-        "name":"XYZ Alpha Hospital",
-        "address":"123 aabra daaba nagar, area, locality",
-        "city":"Bhopal",
-        "state":"Madhya Pradesh",
-        "lat": 23.3453,
-        "long": 77.4256,
-        "medicalStore": [
+         "id": 1,
+         "type": "hospital",
+         "contact":"1233456889",
+         "email":"hiohion@nijd.cdf",
+         "name": "XYZ Alpha Hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.3453,
+         "long": 77.4256,
+         "medicalStore": [
             4,
             6
          ],
-        "labcentre": [
+         "labcentre": [
             3,
             6
          ],
@@ -58,24 +61,107 @@
                "email": "atharvamathur320@gmail.com"
             }
          ],
-        "icubed": [
+         "icubed": [
             13,
             30
          ],
-        "ventilators": [
+         "ventilators": [
             15,
             25
          ],
-        "beds": [
+         "beds": [
             12,
             20
          ],
-        "wards": [
+         "wards": [
             24,
             30
          ],
-        "timing": [
-            700,2100
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 2,
+         "type": "hospital",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "ABC Beta Hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 22.9211229,
+         "long": 78.654942,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contect": 123456343,
+               "speciality": [
+                  "app_development",
+                  "c",
+                  "c++"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contect": 123456343,
+               "speciality": [
+                  "graphic_designing",
+                  "illustrations"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contect": 123456343,
+               "speciality": [
+                  "app_development",
+                  "c",
+                  "c++"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contect": 123456343,
+               "speciality": [
+                  "graphic_designing",
+                  "illustrations"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "icubed": [
+            13,
+            30
+         ],
+         "ventilators": [
+            15,
+            25
+         ],
+         "beds": [
+            12,
+            20
+         ],
+         "wards": [
+            24,
+            30
+         ],
+         "timing": [
+            700,
+            2100
          ]
       }
    ]
