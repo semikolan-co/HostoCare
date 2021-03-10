@@ -30,6 +30,22 @@ app = Flask(__name__)
 #     ]
 # }
 
+def appendToGeoJSON(array,type,to):
+    for i in array:
+        item = {
+            'type': 'Feature',
+            'properties': {
+                    'id': i['id'],
+                    'type': type,
+                    'name': i['name']
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [i['long'], i['lat']]
+            }
+
+        }
+        to.append(item)
 
 
 @app.route("/")
@@ -39,7 +55,7 @@ def index():
 
 @app.route("/search")
 def search():
-
+   
     with open('hospitals.json') as hospitaljson:
         hospitals = json.load(hospitaljson)['data']
 
@@ -56,57 +72,49 @@ def search():
 
 
     geojson = []
-    def appendToGeoJSON(array,type):
-        for i in array:
-            item = {
-                'type': 'Feature',
-                'properties': {
-                        'id': i['id'],
-                        'type': type,
-                        'name': i['name']
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [i['long'], i['lat']]
-                }
 
-            }
-            geojson.append(item)
-
-    appendToGeoJSON(hospitals,"hospital")
-    appendToGeoJSON(clinics,"clinic")
-    appendToGeoJSON(labcentres,"labcentre")
-    appendToGeoJSON(pharmacy,"pharmacy")
+    appendToGeoJSON(hospitals,"hospital",geojson)
+    appendToGeoJSON(clinics,"clinic",geojson)
+    appendToGeoJSON(labcentres,"labcentre",geojson)
+    appendToGeoJSON(pharmacy,"pharmacy",geojson)
 
     return render_template('search.html', geojson=json.dumps(geojson))
 
+
 @app.route("/hospitals")
 def hospitals():
-
     with open('hospitals.json') as hospitaljson:
         hospitals = json.load(hospitaljson)['data']
-
     geojson = []
-    def appendToGeoJSON(array,type):
-        for i in array:
-            item = {
-                'type': 'Feature',
-                'properties': {
-                        'id': i['id'],
-                        'type': type,
-                        'name': i['name']
-                },
-                'geometry': {
-                    'type': 'Point',
-                    'coordinates': [i['long'], i['lat']]
-                }
-
-            }
-            geojson.append(item)
-
-    appendToGeoJSON(hospitals,"hospital")
-
+    appendToGeoJSON(hospitals,"hospital",geojson)
     return render_template('table.html', geojson=json.dumps(geojson),tablejson=json.dumps(hospitals),type ='hospital')
+
+
+@app.route("/clinics")
+def clinics():
+    with open('clinics.json') as clinicjson:
+        clinics = json.load(clinicjson)['data']
+    geojson = []
+    appendToGeoJSON(clinics,"clinic",geojson)
+    return render_template('table.html', geojson=json.dumps(geojson),tablejson=json.dumps(clinics),type ='clinic')
+
+
+@app.route("/labcentre")
+def labcentres():
+    with open('labcentre.json') as labcentrejson:
+        labcentres = json.load(labcentrejson)['data']
+    geojson = []
+    appendToGeoJSON(labcentres,"labcentre",geojson)
+    return render_template('table.html', geojson=json.dumps(geojson),tablejson=json.dumps(labcentres),type ='labcentre')
+
+
+@app.route("/pharmacy")
+def pharmacy():
+    with open('pharmacy.json') as pharmacyjson:
+        pharmacy = json.load(pharmacyjson)['data']
+    geojson = []
+    appendToGeoJSON(pharmacy,"pharmacy",geojson)
+    return render_template('table.html', geojson=json.dumps(geojson),tablejson=json.dumps(pharmacy),type ='pharmacy')
 
 
 app.run(debug=True)
