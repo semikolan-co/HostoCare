@@ -33,13 +33,12 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello():
-
+def index():
     return render_template('index.html')
 
 
 @app.route("/search")
-def harry():
+def search():
 
     with open('hospitals.json') as hospitaljson:
         hospitals = json.load(hospitaljson)['data']
@@ -80,6 +79,34 @@ def harry():
     appendToGeoJSON(pharmacy,"pharmacy")
 
     return render_template('search.html', geojson=json.dumps(geojson))
+
+@app.route("/hospitals")
+def hospitals():
+
+    with open('hospitals.json') as hospitaljson:
+        hospitals = json.load(hospitaljson)['data']
+
+    geojson = []
+    def appendToGeoJSON(array,type):
+        for i in array:
+            item = {
+                'type': 'Feature',
+                'properties': {
+                        'id': i['id'],
+                        'type': type,
+                        'name': i['name']
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [i['long'], i['lat']]
+                }
+
+            }
+            geojson.append(item)
+
+    appendToGeoJSON(hospitals,"hospital")
+
+    return render_template('table.html', geojson=json.dumps(geojson),tablejson=json.dumps(hospitals),type ='hospital')
 
 
 app.run(debug=True)
