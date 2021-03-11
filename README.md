@@ -1,4 +1,4 @@
-  ![logo](https://user-images.githubusercontent.com/73766765/110752076-9fa28480-81f9-11eb-8a27-000d833cbf54.jpg)
+![l](https://user-images.githubusercontent.com/73766765/110752525-3e2ee580-81fa-11eb-9878-09ca01d04a2d.jpg)
 
 # HostoCare
 ## An application where you can search, compare and review Hospitals, Clinics, Medical stores etc.
