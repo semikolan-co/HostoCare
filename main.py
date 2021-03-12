@@ -113,8 +113,46 @@ def pharmacy():
     with open('pharmacy.json') as pharmacyjson:
         pharmacy = json.load(pharmacyjson)['data']
     geojson = []
-    appendToGeoJSON(pharmacy,"pharmacy",geojson)
-    return render_template('table.html', geojson=json.dumps(geojson),tablejson=json.dumps(pharmacy),type ='pharmacy')
+    appendToGeoJSON(pharmacy, "pharmacy", geojson)
+    return render_template('table.html', geojson=json.dumps(geojson), tablejson=json.dumps(pharmacy), type='pharmacy')
+
+
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
+@app.route("/signup")
+def signup():
+    return render_template('signup.html')
+
+@app.route("/view/hospital/<id>")
+def viewhospital(id):
+    with open('hospitals.json') as hospitaljson:
+        hospital = json.load(hospitaljson)['data']
+    param = {}
+    for i in hospital:
+        if int(i['id']) is int(id):
+            param = i
+    
+    with open('pharmacy.json') as pharmacyjson:
+        pharmacy = json.load(pharmacyjson)['data']
+    param['pharmacy'] = []
+    for j in param['medicalStore']:
+        print("j: ",j)
+        for i in pharmacy:
+            if int(j) == int(i['id']):
+                param['pharmacy'].append({
+                    "id":i['id'],
+                    "name":i['name'],
+                    "lat":i['lat'],
+                    "long":i['long'],
+                    "timing":i['timing']
+                })
+    print(param['pharmacy'])
+    geojson = []
+    appendToGeoJSON(hospital, "hospital", geojson)
+    return render_template('viewhospital.html', geojson=json.dumps(geojson), param=param)
+
 
 
 app.run(debug=True)
