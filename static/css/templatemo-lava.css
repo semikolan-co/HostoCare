@@ -677,7 +677,7 @@ welcome
 
 .welcome-area .header-text h1 {
   font-weight: 900;
-  font-size: 52px;
+  font-size:52px;
   line-height: 80px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -708,10 +708,10 @@ welcome
 
 @media (max-width: 1320px) {
   .welcome-area .header-text .left-text {
-    margin-top: 50%;
+    margin-top: 40%;
   }
   .welcome-area .header-text {
-    width: 50%;
+    width: 70%;
     margin-left: 5%;
   }
 }
@@ -920,6 +920,7 @@ testimonials
 
 #testimonials .author img {
   max-width: 120px;
+  border-radius: 50%;
   margin-bottom: -60px;
 }
 

@@ -1,0 +1,248 @@
+{% set pagetitle = "Home | Circuit Reboot" %}
+{% set page = type %}
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- Page Header -->
+<div class="container-fluid p-0">
+
+   <div class="row">
+<div class="col-12 col-md-6 col-lg-6">
+   <div class="card">
+      <div class="card-body">
+         <h1>{{param.name}}</h1>
+         <i class="fa fa-phone"></i> {{param.contact}}<br>
+         <i class="fa fa-envelope"></i> {{param.email}}<br>
+         <i class="fa fa-map-marker-alt"></i> {{param.address}}<br>
+         <i class="fa fa-map-marked-alt"></i> {{param.city}}<br>
+         <i class="fa fa-map"></i> {{param.state}}<br>
+         <i class="fa fa-clock"></i> {{param.timing}}
+      </div>
+   </div>
+</div>
+<div class="col-12 col-md-6 col-lg-6">
+   <div class="card">
+      <div class="card-body">
+         <h2>Pharamacy</h2>
+         {% for item in param.pharmacy %}
+         <a href="{{item}}">{{item}}</a>
+         {% endfor %}
+         <h2>LabCentre</h2>
+         {% for item in param.labcentre %}
+         <a href="{{item}}">{{item}}</a>
+         {% endfor %}
+      </div>
+   </div>
+</div>
+
+
+
+
+      <!-- <h1>{{param.name}}</h1>
+      <br>{{param.contact}}
+      <br>{{param.email}}
+      <br>{{param.address}}
+      <br>{{param.city}}
+      <br>{{param.state}}
+{% for item in param.medicalStore %}
+<a href="{{item}}">{{item}}</a>
+{% endfor %}
+{% for item in param.pharmacy %}
+<a href="{{item}}">{{item}}</a>
+{% endfor %}
+      <br>{{param.medicalStore}}
+      <br>{{param.labcentre}}
+      <br>{{param.doctors}}
+      <br>{{param.icubed}}
+      <br>{{param.ventilators}}
+      <br>{{param.beds}}
+      <br>{{param.wards}}
+      <br>{{param.timing}} -->
+   </div>
+   <meta id="my-data" data-name="{{geojson}}">
+   <div id='map' style='width: 100%; aspect-ratio: 5/3;'></div>
+   <script>         
+function getDistance(lat,long) {
+   
+   var line = turf.lineString([[lat, long], [latitude, longitude]]);
+   var length = turf.length(line, { units: 'kilometers' });
+   return Math.floor(length*10)/10
+} 
+   function showTable() {
+      
+      var table = JSON.parse(document.getElementById("my-data").getAttribute('data-table'));
+      
+      table.sort(function (a, b) { return getDistance(a.lat,a.long) - getDistance(b.lat,b.long) });
+      table.forEach(element => {
+         console.log(getDistance(element.lat,element.long))
+         var d = new Date();
+         var openStatus = element.timing[0]/100<= d.getHours() && d.getHours() < element.timing[1]/100 ? 'Open':'Closed'
+         document.getElementById("tbody").innerHTML+='<tr>\
+            <td class="table-action"> <a href="/view/'+ element.type + '/' + element.id + '">' + element.name +'</a></td>\
+            <td class="table-action"> <a href="tel:'+element.contact+'">'+element.contact+'</a></td>\
+                  <td class="table-action"><a href="https://www.google.com/maps/dir/\''+latitude+','+longitude+'\'/\''+element.lat+','+element.long+'\'/">'+getDistance(element.lat,element.long)+' km away</a></td>\
+                  <td>'+openStatus+' Now</td>\
+                  </tr>'
+                  
+      });
+      
+   }
+      var x = document.getElementById("demo");
+      var latitude = 20.5937;
+      var longitude = 78.9629;
+      
+      if (navigator.geolocation) {
+         var options = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+         };
+
+         function success(pos) {
+            var crd = pos.coords;
+            console.log('Your current position is:');
+            console.log(`Latitude : ${crd.latitude}`);
+            console.log(`Longitude: ${crd.longitude}`);
+            console.log(`More or less ${crd.accuracy} meters.`);
+            latitude = crd.latitude;
+            longitude = crd.longitude;
+            blitMap()
+            showTable()
+
+         }
+
+         function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+         }
+
+         navigator.geolocation.getCurrentPosition(success, error, options);
+      } else {
+         alert("Geolocation is not supported by this browser.")
+      }
+
+
+
+
+
+
+      function blitMap() {
+
+
+         mapboxgl.accessToken = 'pk.eyJ1IjoibWVpbmhvb25oYXJzaCIsImEiOiJja2x4YnRvdWUwdndzMnZudmtlYTUzY29zIn0.D52TDvpIZNtEZek0tvqlyA';
+
+         var geojson = JSON.parse(document.getElementById("my-data").getAttribute('data-name'));
+
+         var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [longitude, latitude],
+            zoom: 11
+         });
+         // Set options
+         // var marker = new mapboxgl.Marker({
+         //     color: "#FFFFFF",
+         //     draggable: true
+         // }).setLngLat([ 77.482181,23.221662])
+         //     .addTo(map);
+
+
+
+         geojson.forEach(function (marker) {
+            // create a DOM element for the marker
+            var el = document.createElement('img');
+            el.className = 'marker';
+            el.src = '/static/images/marker/' + marker.properties.type + '.png';
+            el.style.width = '40px';
+            el.style.height = '40px';
+
+            el.addEventListener('click', function () {
+               window.location.replace("/view/" + marker.properties.type + "/" + marker.properties.id);
+            });
+
+            // create the popup
+            var popup = new mapboxgl.Popup(
+               { offset: [28, 0] }
+            ).setText(
+               marker.properties.name
+            );
+            // add marker to map
+            let marke = new mapboxgl.Marker(el)
+               .setLngLat(marker.geometry.coordinates)
+            // .addTo(map);
+
+
+            // get the marker element
+            const element = marke.getElement();
+            element.id = 'marker'
+            // hover event listener
+            element.addEventListener('mouseenter', () => popup.addTo(map));
+            element.addEventListener('mouseleave', () => popup.remove());
+
+            // add popup to marker
+            marke.setPopup(popup);
+            // add marker to map
+            marke.addTo(map);
+         });
+      }
+   </script>
+
+
+   <!-- 
+      <div class="col-12 col-lg-12 col-xxl-9 d-flex">
+         <div class="card flex-fill">
+            <div class="card-header">
+
+               <h5 class="card-title mb-0">Book Class Info</h5>
+            </div>
+            <table id="table" class="table table-hover my-0 table-responsive">
+               <thead>
+                  <tr>
+                     <td>
+
+                        <button class="btn btn-primary" onclick="exportTableToExcel('table', 'bookfreeclass')">Download
+                           Table</button>
+
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>Kid's Name</th>
+                     <th>Class</th>
+                     <th>Age</th>
+                     <th>Parent's Name</th>
+                     <th>Contact</th>
+                     <th>Email</th>
+                     <th>Actions</th>
+                     <th>Date</th>
+                     <th>Time</th>
+                  </tr>
+               </thead>
+               <tbody>
+                 <tr>
+               
+                  <td>jbkn</td>
+                  <td>jnk</td>
+                  <td>bj</td>
+                  <td>kjb</td>
+                  <td><a href="tel:' . $row["parentphone"] . '">kkb</a></td>
+                  <td>kbb</td>
+                  <td class="table-action">
+                     <a href="registeruser.php?id=ighih"><i class="align-middle" data-feather="user-check"></i></a>
+                     <a href="deleteuser.php?id=hijoij"><i class="align-middle" data-feather="trash"></i></a>
+                  </td>
+                  <td>klnkln</td>
+                  <td>hjpj</td>
+               </tr><tr>
+               
+                  <td>No Result Found</td></tr>
+
+               </tbody>
+            </table>
+         </div>
+      </div>
+-->
+
+</div>
+
+
+
+{% endblock %}
