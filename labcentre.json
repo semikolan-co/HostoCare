@@ -12,7 +12,7 @@
          "lat": 23.3653,
          "long": 77.4056,
          "medicalStore": [
-            4,
+            1,
             6
          ],
          "testavailable": [
@@ -23,20 +23,20 @@
          "doctors": [
             {
                "name": "Dr. Ankur Gupta",
-               "contect": 123456343,
+               "contact": 123456343,
                "speciality": [
-                  "app_development",
-                  "c",
-                  "c++"
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
                ],
                "email": "ankur052@gmail.com"
             },
             {
                "name": "Dr. Atharva Jyoti Vedanshu Mathur",
-               "contect": 123456343,
+               "contact": 123456343,
                "speciality": [
-                  "graphic_designing",
-                  "illustrations"
+                  "Gastroenterologists",
+                  "Oncologist"
                ],
                "email": "atharvamathur320@gmail.com"
             }
@@ -44,20 +44,20 @@
          "homecare": [
             {
                "name": "Dr. Ankur Gupta",
-               "contect": 123456343,
+               "contact": 123456343,
                "speciality": [
-                  "app_development",
-                  "c",
-                  "c++"
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
                ],
                "email": "ankur052@gmail.com"
             },
             {
                "name": "Dr. Atharva Jyoti Vedanshu Mathur",
-               "contect": 123456343,
+               "contact": 123456343,
                "speciality": [
-                  "graphic_designing",
-                  "illustrations"
+                  "Gastroenterologists",
+                  "Oncologist"
                ],
                "email": "atharvamathur320@gmail.com"
             }
