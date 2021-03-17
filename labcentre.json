@@ -5,12 +5,615 @@
          "type": "labcentre",
          "contact": "1233456889",
          "email": "hiohion@nijd.cdf",
-         "name": "XYZ Alpha Hospital",
+         "name": "XYZ Alpha Lab Centre",
          "address": "123 aabra daaba nagar, area, locality",
          "city": "Bhopal",
          "state": "Madhya Pradesh",
          "lat": 23.3653,
          "long": 77.4056,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 2,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "XYZ Alpha Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.33453,
+         "long": 77.5657686,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 3,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Ramesh Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.323,
+         "long": 77.5666,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id":4,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Kamlesh Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.53,
+         "long": 77.86,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 5,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Soni Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.533453,
+         "long": 78.657686,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 6,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Ravi Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 22.53,
+         "long": 79.57686,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 7,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Tyageshwar Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 22.345353,
+         "long": 78.5686,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 8,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Jyoti Mathur Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 21.335645453,
+         "long": 79.65656556,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 9,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Gupteshwar Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.5668863453,
+         "long": 77.52787686,
+         "medicalStore": [
+            1,
+            6
+         ],
+         "testavailable": [
+            "bloodtest",
+            "urinetest",
+            "somerandomtest"
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 10,
+         "type": "labcentre",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "XYZ Alpha Lab Centre",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.453,
+         "long": 78.764,
          "medicalStore": [
             1,
             6

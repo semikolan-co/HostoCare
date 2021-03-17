@@ -270,4 +270,4 @@ def viewpharmacy(id):
 
 
 
-app.run(debug=True)
+app.run()

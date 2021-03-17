@@ -5,13 +5,644 @@
          "type": "pharmacy",
          "contact": "1233456889",
          "email": "hiohion@nijd.cdf",
-         "name": "XYZ Alpha Hospital",
+         "name": "Athjyoti Pharmacy",
          "address": "123 aabra daaba nagar, area, locality",
          "city": "Bhopal",
          "state": "Madhya Pradesh",
          "lat": 23.3253,
          "long": 77.4456,
-         "medicines": [{
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 2,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Vedanshu Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 24.54343,
+         "long": 77.4456,
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 3,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "VedJyoti Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.532643,
+         "long": 78.6,
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 4,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Mathuranshu Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 22.543,
+         "long": 77.56,
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 5,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "VedMathur Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 24.54343,
+         "long": 76.4456,
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 6,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Athanshu Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 22.343,
+         "long": 78.56,
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 7,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Jyotharva Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 21.43,
+         "long": 77.4456,
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 8,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Vedathur Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 22.34343443,
+         "long": 78.56,
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 9,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Jyodanshu Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.7783,
+         "long": 78.5476,
+         "medicines": [
+            {
+               "id": "1",
+               "name": "Random Medicine Name",
+               "availability": 32
+            },
+            {
+               "id": "2",
+               "name": "Paracetamol",
+               "availability": 24
+            }
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 10,
+         "type": "pharmacy",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Ved MAthur Pharmacy",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 22.155343,
+         "long": 77.996,
+         "medicines": [
+            {
                "id": "1",
                "name": "Random Medicine Name",
                "availability": 32

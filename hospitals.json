@@ -326,6 +326,580 @@
             700,
             2100
          ]
+      },
+      {
+         "id": 5,
+         "type": "hospital",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Apollo hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.654229,
+         "long": 77.78664942,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "icubed": [
+            13,
+            30
+         ],
+         "ventilators": [
+            15,
+            25
+         ],
+         "beds": [
+            12,
+            20
+         ],
+         "wards": [
+            24,
+            30
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 6,
+         "type": "hospital",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Sant Sai Hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.4656229,
+         "long": 77.76544942,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "icubed": [
+            13,
+            30
+         ],
+         "ventilators": [
+            15,
+            25
+         ],
+         "beds": [
+            12,
+            20
+         ],
+         "wards": [
+            24,
+            30
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 7,
+         "type": "hospital",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Kabir hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.4675229,
+         "long": 77.7676664942,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "icubed": [
+            13,
+            30
+         ],
+         "ventilators": [
+            15,
+            25
+         ],
+         "beds": [
+            12,
+            20
+         ],
+         "wards": [
+            24,
+            30
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 8,
+         "type": "hospital",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Ravidaw Hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.729,
+         "long": 77.9456442,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "icubed": [
+            13,
+            30
+         ],
+         "ventilators": [
+            15,
+            25
+         ],
+         "beds": [
+            12,
+            20
+         ],
+         "wards": [
+            24,
+            30
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 9,
+         "type": "hospital",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Gates hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.643432,
+         "long": 77.7544942,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "icubed": [
+            13,
+            30
+         ],
+         "ventilators": [
+            15,
+            25
+         ],
+         "beds": [
+            12,
+            20
+         ],
+         "wards": [
+            24,
+            30
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 10,
+         "type": "hospital",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Musk Hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.143354469,
+         "long": 77.65754644942,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "icubed": [
+            13,
+            30
+         ],
+         "ventilators": [
+            15,
+            25
+         ],
+         "beds": [
+            12,
+            20
+         ],
+         "wards": [
+            24,
+            30
+         ],
+         "timing": [
+            700,
+            2100
+         ]
+      },
+      {
+         "id": 11,
+         "type": "hospital",
+         "contact": "1233456889",
+         "email": "hiohion@nijd.cdf",
+         "name": "Zuck hospital",
+         "address": "123 aabra daaba nagar, area, locality",
+         "city": "Bhopal",
+         "state": "Madhya Pradesh",
+         "lat": 23.654459,
+         "long": 77.64942,
+         "medicalStore": [
+            4,
+            6
+         ],
+         "labcentre": [
+            3,
+            6
+         ],
+         "doctors": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "homecare": [
+            {
+               "name": "Dr. Ankur Gupta",
+               "contact": 123456343,
+               "speciality": [
+                  "Cardiology",
+                  "otolaryngologists.",
+                  "Optometrist"
+               ],
+               "email": "ankur052@gmail.com"
+            },
+            {
+               "name": "Dr. Atharva Jyoti Vedanshu Mathur",
+               "contact": 123456343,
+               "speciality": [
+                  "Gastroenterologists",
+                  "Oncologist"
+               ],
+               "email": "atharvamathur320@gmail.com"
+            }
+         ],
+         "icubed": [
+            13,
+            30
+         ],
+         "ventilators": [
+            15,
+            25
+         ],
+         "beds": [
+            12,
+            20
+         ],
+         "wards": [
+            24,
+            30
+         ],
+         "timing": [
+            700,
+            2100
+         ]
       }
    ]
 
