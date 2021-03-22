@@ -1,34 +1,6 @@
 from flask import Flask, render_template
 import json
-import geocoder
-g = geocoder.ip('me')
-print(g.latlng)
 app = Flask(__name__)
-
-
-
-
-
-
-
-# geojson = {
-#     'type': 'FeatureCollection',
-#     'features': [
-#         {
-#             'type': 'Feature',
-#             'properties': {
-#                 'id': 2,
-#                 'type': 'hospital',
-#                 'name': 'Some Random NAme'
-#             },
-#             'geometry': {
-#                 'type': 'Point',
-#                 'coordinates': [77.482181, 23.241662]
-#             }
-        
-#         }
-#     ]
-# }
 
 def appendToGeoJSON(array,type,to):
     for i in array:
