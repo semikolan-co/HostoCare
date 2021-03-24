@@ -1,4 +1,4 @@
-![HostoCare Logo](https://github.com/meinhoonharsh/HostoCare/blob/main/images/logo.png) <br>
+<img src="https://github.com/meinhoonharsh/HostoCare/blob/main/static/images/logo.png" width="200"><br>
 Have a Look at HostoCare Website : [http://hostocare.meinhoonharsh.replit.co](http://hostocare.meinhoonharsh.replit.co)
 # Welcome to HostoCare
 
